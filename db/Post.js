@@ -1,4 +1,4 @@
-import { DataTypes } from "sequelize";
+import { DataTypes, INTEGER } from "sequelize";
 
 const Post = (db) => {
   return db.define("post", {
@@ -10,6 +10,7 @@ const Post = (db) => {
     title: DataTypes.STRING,
     tagline: DataTypes.STRING,
     content: DataTypes.TEXT,
+    userID: DataTypes.INTEGER,
   });
 };
 
