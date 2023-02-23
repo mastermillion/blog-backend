@@ -11,7 +11,7 @@ server.use(express.json());
 const sequelizeStore = connectSession(sessions.Store);
 server.use(
   sessions({
-    secret: "mysecretkey",
+    secret: "artrell'ssecretpasscode",
     store: new sequelizeStore({ db }),
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30 },
   })
